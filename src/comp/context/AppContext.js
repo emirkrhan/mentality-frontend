@@ -22,13 +22,13 @@ export const AppProvider = ({ children }) => {
     });
   }
 
-  const getAllMessages = () => {
+  const getAllMessages = useCallback(() => {
     botService.getAllMessages()
-      .then((data) => setList(data))
+      .then((data) => setMessageList(data))
       .catch((error) => {
         console.error('Mesajları alırken bir hata oluştu:', error);
       });
-  };
+  }, []);
 
   useEffect(() => {
     getAllMessages();
