@@ -22,17 +22,18 @@ export const AppProvider = ({ children }) => {
     });
   }
 
-  const getAllMessages = useCallback(() => {
+  const getAllMessages = () => {
     botService.getAllMessages()
-      .then((data) => setMessageList(data))
+      .then((data) => setList(data))
       .catch((error) => {
         console.error('Mesajları alırken bir hata oluştu:', error);
       });
-  }, []);
+  };
 
   useEffect(() => {
     getAllMessages();
-  }, [getAllMessages]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   
 
 
