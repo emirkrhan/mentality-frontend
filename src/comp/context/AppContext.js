@@ -30,6 +30,11 @@ export const AppProvider = ({ children }) => {
       });
   };
 
+  useEffect(() => {
+    getAllMessages();
+  }, [getAllMessages]);
+  
+
 
   const getChatResponse = () => {
     botService.getChatResponse(prompt.message)
