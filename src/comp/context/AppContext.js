@@ -22,13 +22,13 @@ export const AppProvider = ({ children }) => {
     });
   }
 
-  // const getAllMessages = () => {
-  //   botService.getAllMessages()
-  //     .then((data) => setList(data))
-  //     .catch((error) => {
-  //       console.error('Mesajları alırken bir hata oluştu:', error);
-  //     });
-  // };
+  const getAllMessages = () => {
+    botService.getAllMessages()
+      .then((data) => setList(data))
+      .catch((error) => {
+        console.error('Mesajları alırken bir hata oluştu:', error);
+      });
+  };
 
 
   const getChatResponse = () => {
@@ -52,18 +52,7 @@ export const AppProvider = ({ children }) => {
   };
 
 
-  const getAllMessages = () => {
-    botService.getAllMessages()
-      .then((data) => setList(data))
-      .catch((error) => {
-        console.error('Mesajları alırken bir hata oluştu:', error);
-      });
-  };
-  
-  useEffect(() => {
-    getAllMessages();
-  }, []); // Boş bağımlılık listesi, sadece bir kere çağrılmasını sağlar
-  
+ 
 
   const values = {
     prompt,
