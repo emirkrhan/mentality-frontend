@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 import Message from "../message/Message"
 import "./chatbot.css"
@@ -12,7 +12,6 @@ function Chatbot() {
     list,
     prompt,
     promptChange,
-    response,
     getChatResponse,
     postOneMessage,
     setPrompt

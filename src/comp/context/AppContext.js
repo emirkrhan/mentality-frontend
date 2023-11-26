@@ -32,22 +32,6 @@ export const AppProvider = ({ children }) => {
 
 
   const getChatResponse = () => {
-    // const allMessages = list.map(item => item.message);
-    const string1 = prompt.message;
-    // const string2 = allMessages;
-
-    // Son 4 mesajı al
-const lastFourMessages = list.slice(-5);
-
-// Sadece mesaj içeriklerini al
-const string2 = lastFourMessages.map(item => item.author + ": " + item.message);
-
-// Mesajları birleştir
-const combinedString = string2.join("\n");
-
-// Diğer işlemleri gerçekleştir...
-
-// "ÖNCEKİ KONUŞMALAR" + combinedString + "ŞU ANKİ İSTEK" + string1
     botService.getChatResponse(prompt.message)
       .then((resp) => {
 

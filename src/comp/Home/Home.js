@@ -1,6 +1,5 @@
 import React from 'react'
 import "./home.css"
-import Spline from '@splinetool/react-spline';
 
 function Home() {
   return (
@@ -12,11 +11,11 @@ function Home() {
             <div className="logo-text">Mentality.co</div>
           </div>
           <div className="tag-cont">
-            <a href="">Anasayfa</a>
-            <a href="">Konuş</a>
-            <a className='tag-pos' href="">Blog &nbsp; <i class="fa-solid fa-caret-down"></i>
+            <a href="/">Anasayfa</a>
+            <a href="/chat">Konuş</a>
+            <a className='tag-pos' href="/blog">Blog &nbsp; <i class="fa-solid fa-caret-down"></i>
             <div className="opening-menu"></div></a>
-            <a href="">İletişim</a>
+            <a href="/contact">İletişim</a>
           </div>
         </div>
         <div className="color-box">Örnek diyalogları incele &nbsp; <i class="fa-solid fa-arrow-right-long fa-fade"></i>
