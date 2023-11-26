@@ -1,0 +1,63 @@
+.message-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.profile-pic{
+    width: 100%;
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+
+
+.message-view{
+    width: 100%;
+    height: auto;
+    min-height: 3rem;
+    background-color: transparent;
+    color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    border-radius: 20px;
+    line-height: 1.6rem;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user-photos{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(prof.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 500px;
+    margin-right: 1rem;
+}
+
+.mentality-photos{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(ai.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 500px;
+    margin-right: 1rem;
+    background-color: rgb(247, 247, 247);
+}

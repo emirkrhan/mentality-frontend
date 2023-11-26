@@ -1,0 +1,212 @@
+.big-cont {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.anima-cont {
+    width: 100%;
+    height: 100vh;
+    background-image: url(scr.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.menu-container {
+    width: 100%;
+    height: 6rem;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo-cont {
+    width: 20%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+}
+
+.logo-text {
+    width: 7rem;
+    height: 2rem;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-cont {
+    width: 25%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.tag-cont a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+
+}
+
+.tag-cont .tag-pos {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-cont .tag-pos:hover .opening-menu {
+    display: flex;
+}
+
+.opening-menu {
+    width: 30rem;
+    height: 15rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 99;
+    border-radius: 20px;
+    display: none;
+    animation-name: ornek;
+    animation-duration: 0.2s;
+}
+
+@keyframes ornek {
+    from {
+        top: 4rem;
+    }
+
+    to {
+        top: 2rem;
+    }
+}
+
+.tag-cont a:hover {
+    color: #bdbdbd;
+    transition: 0.4s;
+}
+
+.tag-cont a i {
+    font-size: 13px;
+}
+
+.color-box {
+    width: 18rem;
+    height: 2.5rem;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #f1752b;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 11rem;
+}
+
+
+
+.text-box {
+    width: 60rem;
+    height: 12rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 72px;
+    color: #02015a;
+    line-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan-box {
+    width: 60rem;
+    height: 4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #4e5774;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-container {
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.button-container .login {
+    width: 14rem;
+    height: 3rem;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 320px;
+    color: #02015a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #02015a;
+}
+
+.button-container .signin {
+    width: 14rem;
+    height: 3rem;
+    background-color: #02015a;
+    text-decoration: none;
+    border-radius: 320px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border: solid;
+    border-color: #0000ff;
+    border-width: 1px;
+}
