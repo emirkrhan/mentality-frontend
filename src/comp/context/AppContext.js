@@ -54,7 +54,7 @@ export const AppProvider = ({ children }) => {
 
   useEffect(() => {
     getAllMessages();
-  }, []);
+  }, [getAllMessages()]);
 
   // {
   //   message: prompt.message,
