@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class BotService {
   constructor() {
-    this.baseUrl = "https://annoyed-sweater-production.up.railway.app";
+    this.baseUrl = "https://annoyed-sweater-production.up.railway.app/bot";
   }
 
   async getAllMessages() {
