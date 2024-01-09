@@ -1,32 +1,46 @@
 .big-cont {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
-    background-color: black;
-}
-
-.anima-cont {
-    width: 100%;
-    height: 100vh;
-    background-image: url(scr.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #f9fafa;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.menu-container {
+.back-gr {
+    width: 85rem;
+    height: 85rem;
+    background-image: url(scr3.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    animation: rotateAnimation 7s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar {
     width: 100%;
     height: 6rem;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
 }
 
 .logo-cont {
@@ -37,176 +51,210 @@
     justify-content: center;
 }
 
-.logo-image {
-    width: 2rem;
-    height: 2rem;
-    background-image: url(star.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
+.menu-cont {
+    width: 15rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
+.menu-tags {
+    width: 40rem;
+    height: 20rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+    z-index: 110;
+    animation-name: opacity;
+    animation-duration: 0.3s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tag-column{
+    width: 12rem;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.tag-column a {
+    width: 12rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fa-bolt{
+    font-size: 10px;
+    color: gold;
+}
+
+.tag-column a:hover{
+    background-color: #f5f5f5;
+    
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+    }
+}
+
+.logo-div {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+}
+
+.logo-image {
+    width: 3rem;
+    height: 3rem;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .logo-text {
     width: 7rem;
-    height: 2rem;
-    font-family: 'Albert Sans', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: #fbfbfb;
+    height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.tag-cont {
-    width: 25%;
-    height: 6rem;
+.content-container {
+    width: 100%;
+    height: 35rem;
+    background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
+    justify-content: flex-end;
+    flex-direction: column;
+    z-index: 90;
 }
 
-.tag-cont a {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(231, 231, 231);
-
-}
-
-.tag-cont .tag-pos {
-    position: relative;
-    width: 4rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tag-cont .tag-pos:hover .opening-menu {
-    display: flex;
-}
-
-.opening-menu {
-    width: 30rem;
-    height: 15rem;
-    background-color: #ffffff;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    z-index: 99;
-    border-radius: 20px;
-    display: none;
-    animation-name: ornek;
-    animation-duration: 0.2s;
-}
-
-@keyframes ornek {
-    from {
-        top: 4rem;
-    }
-
-    to {
-        top: 2rem;
-    }
-}
-
-.tag-cont a:hover {
-    color: #bdbdbd;
-    transition: 0.4s;
-}
-
-.tag-cont a i {
-    font-size: 13px;
-}
-
-.color-box {
-    width: 18rem;
-    height: 2.5rem;
-    background-color: #eeeeee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    color: #f1752b;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 11rem;
-}
-
-
-
-.text-box {
-    width: 60rem;
-    height: 12rem;
-    font-family: 'DM Sans', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: 72px;
-    color: #02015a;
-    line-height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slogan-box {
-    width: 60rem;
-    height: 4rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 29px;
-    color: #4e5774;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-}
-
-.button-container {
-    width: 30rem;
+.btn-cont {
+    width: 40rem;
     height: 5rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-.button-container .login {
-    width: 14rem;
-    height: 3rem;
+.btn-cont button {
+    width: 16rem;
+    height: 2rem;
     background-color: white;
-    text-decoration: none;
-    border-radius: 320px;
-    color: #02015a;
+    border: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    border: 1px solid #02015a;
+    cursor: pointer;
 }
 
-.button-container .signin {
-    width: 14rem;
-    height: 3rem;
-    background-color: #02015a;
-    text-decoration: none;
-    border-radius: 320px;
-    color: white;
+.btn-cont button .text-btn {
+    width: 10rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #646464;
+}
+
+.btn-cont button .icon-btn-one {
+    width: 2rem;
+    height: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 7px;
+    color: #17b169;
+}
+
+.btn-cont button .icon-btn-two {
+    width: 4rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #555555;
+}
+
+.text-cont {
+    width: 80%;
+    height: 7rem;
+    color: #242427;
+    font-size: 70px;
+    font-family: 'Urbanist', sans-serif;
     font-weight: 500;
-    font-size: 15px;
-    border: solid;
-    border-color: #0000ff;
-    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+.bottext {
+    width: 60%;
+    height: 10rem;
+    color: #2c2c30;
+    font-size: 24px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 33px;
+}
+
+.bottom-btn {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.bottom-btn button {
+    width: 13rem;
+    height: 3.5rem;
+    background-color: #1e1e20;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }

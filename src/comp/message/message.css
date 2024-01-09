@@ -1,5 +1,5 @@
 .message-container{
-    width: 80%;
+    width: 75%;
     height: auto;
     display: flex;
     align-items: center;
@@ -10,33 +10,67 @@
 
 .profile-pic{
     width: 100%;
-    height: 4rem;
-    color: white;
+    height: 3rem;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: transparent;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-weight: 800;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 
 
 .message-view{
-    width: 100%;
+    width: 89%;
     height: auto;
     min-height: 3rem;
     background-color: transparent;
-    color: rgb(230, 230, 230);
+    color: rgb(94, 94, 94);
     display: flex;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    border-radius: 20px;
+    align-items: flex-start;
+    font-family: 'Instrument Sans', sans-serif;
     line-height: 1.6rem;
     text-align: justify;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.report-div{
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.report-div button{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.report-div button i{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.report-div button i:hover{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.space-message{
+    height: 5rem;
+    width: 100%;
 }
 
 .user-photos{
@@ -47,17 +81,25 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 500px;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
 }
 
 .mentality-photos{
     width: 2rem;
     height: 2rem;
-    background-image: url(ai.svg);
+    background-image: url(ment2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 500px;
-    margin-right: 1rem;
-    background-color: rgb(247, 247, 247);
+    margin-right: 0.7rem;
+}
+
+.feedback-div{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
 }

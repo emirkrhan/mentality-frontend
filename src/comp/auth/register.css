@@ -1,0 +1,210 @@
+.register-container {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-reg {
+    width: 45%;
+    height: 100vh;
+    background-image: url(rrr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-box {
+    width: 55%;
+    height: 100vh;
+    background-image: url(przt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-reg {
+    width: 30rem;
+    height: 5rem;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    color: #242427;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.undertext-reg {
+    width: 30rem;
+    height: 2rem;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #242427;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-reg {
+    width: 35rem;
+    height: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.name-surname{
+    width: 31rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-gender{
+    width: 31rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-surname input{
+    width: 14rem;
+    height: 2.5rem;
+    border: solid;
+    border-radius: 8px;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    padding-left: 1rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #242427;
+    outline: none; 
+}
+
+.date-gender input{
+    width: 14rem;
+    height: 2.5rem;
+    border: solid;
+    border-radius: 8px;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    padding-left: 1rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #242427;
+    outline: none; 
+}
+
+.pass-input{
+    width: 31rem;
+    height: 2.5rem;
+    border: solid;
+    border-radius: 8px;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    background-color: transparent;
+    display: flex;
+}
+
+.pass-input .password{
+    width: 28rem;
+    height: 2.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #242427;
+}
+
+.pass-input .eye-button{
+    width: 3rem;
+    height: 2.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.input-reg .username-input {
+    width: 30rem;
+    height: 2.5rem;
+    border: solid;
+    border-radius: 8px;
+    border-color: #d3d3d3;
+    border-width: 1px;
+    outline: none;
+    padding-left: 1rem;
+    background-color: transparent;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #242427;
+}
+
+.input-reg button {
+    width: 31rem;
+    height: 3rem;
+    background-color: #7047eb;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-route{
+    width: 30rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-text{
+    width: auto;
+    height: 3rem;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.log-tag{
+    width: auto;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #7047eb;
+}

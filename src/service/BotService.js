@@ -2,15 +2,35 @@ import axios from 'axios';
 
 class BotService {
   constructor() {
-    this.baseUrl = "https://annoyed-sweater-production.up.railway.app/bot";
+    this.baseUrl = "http://localhost:8080/bot";
   }
 
-  async getAllMessages() {
-    return await axios.get(this.baseUrl).then((response) => response.data);
+  async getAllMessages(chatId, userId) {
+    try {
+      const response = await axios.get(`${this.baseUrl}?chatId=${chatId}&userId=${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Mesajları alma sırasında bir hata oluştu:', error);
+      throw error;
+    }
   }
+  
 
-  async getChatResponse(prompt) {
+
+  async getChatResponse(prompt, userid, chatid) {
     const url = this.baseUrl + "/chat";
+    return await axios.get(url, {
+               params: {
+                 prompt: prompt,
+                 userid: userid,
+                 chatid: chatid
+               },
+               withCredentials: true
+             });
+  }
+
+  async getChatResponse2(prompt) {
+    const url = this.baseUrl + "/chat2";
     return await axios.get(url, {
                params: {
                  prompt: prompt
@@ -19,10 +39,29 @@ class BotService {
              });
   }
 
+  // async getChatResponseTwo(prompt) {
+  //   const url = this.baseUrl + "/chattwo";
+  //   return await axios.get(url, {
+  //              params: {
+  //                prompt: prompt
+  //              },
+  //              withCredentials: true
+  //            });
+  // }
+
   async postOneMessage(message) {
     const url = this.baseUrl + "/send-message";
     return await axios.post(url, message).then((resp) => resp.data);
   }
+
+  async clearChat(user) {
+    const url = this.baseUrl + "/clear";
+    return await axios.post(url, user).then((resp) => resp.data);
+  }
+  
+  
+  
+  
   
 }
 export default BotService;

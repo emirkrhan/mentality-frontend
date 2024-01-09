@@ -1,0 +1,16 @@
+.terms-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-p{
+    width: 60%;
+    margin-top: 10rem;
+    height: auto;
+    margin-bottom: 5rem;
+    text-align: justify;
+    font-family: 'Urbanist', sans-serif;
+}

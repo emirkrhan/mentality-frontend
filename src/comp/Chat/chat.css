@@ -1,0 +1,168 @@
+.chat-btn {
+    width: 95%;
+    height: 4rem;
+    border-radius: 10px;
+    display: flex;
+    color: #1e1515;
+    background-color: #f4f2f2;
+    margin-bottom: 1rem;
+}
+
+.con-chatting {
+    width: 95%;
+    height: 4rem;
+    border-radius: 10px;
+    display: flex;
+    color: #1e1515;
+    background-color: #e5d4ff;
+    margin-bottom: 1rem;
+    border: solid 1px #cfafff;
+}
+
+.completed-div {
+    width: 10%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed-div i{
+    color: #494949;
+    font-size: 7px;
+}
+
+.continued-div {
+    width: 10%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continued-div i{
+    color: #883ef8;
+    font-size: 7px;
+}
+
+.chat-text {
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chat-information {
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-name {
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.chat-date {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #727272;
+}
+
+.chat-buttons{
+    width: 30%;
+    height: 4rem;
+    display: flex;
+}
+
+.chat-buttonone{
+    width: 35%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-buttontwo{
+    width: 65%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chat-buttontwo .pink-button{
+    background-color: #883ef8;
+    border: none;
+    width: 8rem;
+    height: 2.7rem;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+}
+
+.chat-buttontwo .pink-button:hover{
+    background-color: #9d5efc;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.chat-buttontwo .history-button{
+    background-color: #1e1515;
+    border: none;
+    width: 8rem;
+    height: 2.7rem;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+}
+
+.chat-buttontwo .history-button:hover{
+    background-color: #2c2c2c;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.chat-buttonone button{
+    width: 3rem;
+    height: 2.7rem;
+    background-color: #e0dcdc;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chat-buttonone button:hover{
+    background-color: #d6d1d1;
+    cursor: pointer; 
+    transition: 0.4s;
+}
